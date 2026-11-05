@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f8f7ff" />
+  <meta name="theme-color" content="#090d16" />
   <meta name="description" content="Akshatha B. — Computer Science Engineering student specializing in Data Science. Explore my projects, internship experience, technical skills, and certifications." />
   <title>Akshatha B. | Developer Portfolio</title>
 
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
   <div class="ambient ambient-three"></div>
@@ -37,6 +38,7 @@
       <a href="#certificates">Certifications</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span class="theme-icon">☼</span><span class="theme-label">Light</span></button>
       <a class="resume-button resume-pending" href="#contact" aria-label="Resume coming soon" title="Resume PDF will be added when available">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -56,18 +58,17 @@
           Computer Science Engineering Student
         </div>
 
-        <p class="eyebrow">HELLO, I'M AKSHATHA</p>
+        <p class="eyebrow">PORTFOLIO / 2026 <span class="hero-index">— HELLO, I'M AKSHATHA</span></p>
 
         <h1>
-          Learning today.<br />
-          <span class="gradient-text">Building for tomorrow.</span>
+          I build things<br />
+          <span class="gradient-text">that make sense.</span>
         </h1>
 
         <p class="hero-description">
-          I'm a third-year Computer Science Engineering student
-          specializing in Data Science. I enjoy exploring technology,
-          building web projects, and finding practical solutions to
-          real-world problems.
+          Computer Science Engineering student focused on Data Science,
+          frontend development and practical problem-solving. I like turning
+          ideas into useful digital experiences — then improving them one detail at a time.
         </p>
 
         <div class="hero-actions">
@@ -79,6 +80,7 @@
           </a>
         </div>
 
+        <div class="hero-meta"><span>BASED IN BENGALURU, INDIA</span><span>OPEN TO LEARNING & COLLABORATION</span></div>
         <div class="hero-socials">
           <!-- Replace # with your actual profile URLs -->
           <a href="https://github.com/AkshathaVaibhav" target="_blank"
@@ -89,7 +91,7 @@
         </div>
       </div>
 
-      <div class="hero-visual reveal">
+      <div class="hero-visual reveal" data-tilt>
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
 
@@ -106,21 +108,9 @@
           </div>
         </div>
 
-        <div class="floating-card floating-code">
-          <span class="mini-icon purple-icon">&lt;/&gt;</span>
-          <div>
-            <strong>Curious mind</strong>
-            <small>Always learning</small>
-          </div>
-        </div>
+        <div class="floating-card floating-code"><span class="mini-icon purple-icon">&lt;/&gt;</span><div><strong>BUILD / LEARN</strong><small>Always iterating</small></div></div>
 
-        <div class="floating-card floating-data">
-          <span class="mini-icon blue-icon">✳</span>
-          <div>
-            <strong>Data + Development</strong>
-            <small>My areas of interest</small>
-          </div>
-        </div>
+        <div class="floating-card floating-data"><span class="mini-icon blue-icon">✳</span><div><strong>DATA × DEVELOPMENT</strong><small>Areas of exploration</small></div></div>
 
         <span class="decorative-star star-one">✳</span>
         <span class="decorative-star star-two">✦</span>
@@ -183,19 +173,9 @@
         <p>Learning through practical work and new challenges.</p>
       </div>
 
-      <div class="experience-grid">
-        <article class="timeline-card reveal">
-          <div class="experience-top"><div><span class="experience-label">INTERNSHIP</span><h3>Web Development Intern</h3><p class="muted">VasudevCore</p></div><span class="date-pill">Completed</span></div>
-          <p>Worked on a real-world school website project for MES Convent and English High School, Thavarekere, using HTML, CSS and JavaScript.</p>
-          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-          <a class="text-link" href="vasudevcore.html">Explore internship <span>↗</span></a>
-        </article>
-        <article class="timeline-card reveal">
-          <div class="experience-top"><div><span class="experience-label">INTERNSHIP</span><h3>Data Analyst Intern</h3><p class="muted">SkillCraft Technology</p></div><span class="date-pill">Completed</span></div>
-          <p>Worked on data analysis tasks and dashboard-based projects using Excel, Python and Power BI.</p>
-          <div class="tag-row"><span class="tag">Excel</span><span class="tag">Python</span><span class="tag">Power BI</span></div>
-          <a class="text-link" href="skillcraft.html">Explore internship <span>↗</span></a>
-        </article>
+      <div class="experience-list">
+        <a class="experience-row reveal" href="vasudevcore.html"><span class="experience-number">01</span><span class="experience-main"><strong>VasudevCore</strong><small>Web Development Intern · Built and deployed a responsive website for MES Convent & English High School.</small></span><span class="experience-stack">HTML / CSS / JS</span><span class="experience-arrow">↗</span></a>
+        <a class="experience-row reveal" href="skillcraft.html"><span class="experience-number">02</span><span class="experience-main"><strong>SkillCraft Technology</strong><small>Data Analyst Intern · Hands-on work in data cleaning, exploratory analysis and visualisation.</small></span><span class="experience-stack">PYTHON / EXCEL / POWER BI</span><span class="experience-arrow">↗</span></a>
       </div>
     </section>
 
@@ -207,28 +187,9 @@
         <p>Verified learning milestones and professional experience.</p>
       </div>
 
-      <div class="certificate-grid reveal">
-        <article class="certificate-card">
-          <div class="certificate-icon">✳</div>
-          <p class="eyebrow">INTERNSHIP</p>
-          <h3>SkillCraft Technology</h3>
-          <p>Internship Completion Certificate</p>
-          <a class="text-link" href="https://drive.google.com/file/d/1zZgL2IbyZA3M7PGNgaLWJLywQM-wnNUh/view" target="_blank" rel="noopener noreferrer">View certificate ↗</a>
-        </article>
-        <article class="certificate-card">
-          <div class="certificate-icon certificate-icon-blue">✦</div>
-          <p class="eyebrow">RECOMMENDATION</p>
-          <h3>SkillCraft Technology</h3>
-          <p>Letter of Recommendation (LOR)</p>
-          <a class="text-link" href="https://drive.google.com/file/d/1tPouNxwPlkcF4iYA9ySf8sw4Wcmm0CBD/view" target="_blank" rel="noopener noreferrer">View letter ↗</a>
-        </article>
-        <article class="certificate-card">
-          <div class="certificate-icon">✧</div>
-          <p class="eyebrow">JOB SIMULATION</p>
-          <h3>Deloitte</h3>
-          <p>Data Analytics Job Simulation — Certificate of Completion</p>
-          <a class="text-link" href="https://drive.google.com/file/d/1gIaH8U560XdddH5erNWJ1sB_6YAF0Ry_/view" target="_blank" rel="noopener noreferrer">View certificate ↗</a>
-        </article>
+      <div class="certificate-list reveal">
+        <article class="certificate-entry"><div class="certificate-index">01</div><div class="certificate-entry-main"><p class="eyebrow">INTERNSHIP + RECOGNITION</p><h3>SkillCraft Technology</h3><p>Data Analyst Internship documentation</p></div><div class="certificate-actions-inline"><a href="https://drive.google.com/file/d/1zZgL2IbyZA3M7PGNgaLWJLywQM-wnNUh/view" target="_blank" rel="noopener noreferrer">Completion Certificate ↗</a><a href="https://drive.google.com/file/d/1tPouNxwPlkcF4iYA9ySf8sw4Wcmm0CBD/view" target="_blank" rel="noopener noreferrer">Letter of Recommendation ↗</a></div></article>
+        <article class="certificate-entry"><div class="certificate-index">02</div><div class="certificate-entry-main"><p class="eyebrow">JOB SIMULATION</p><h3>Deloitte</h3><p>Data Analytics Job Simulation — Certificate of Completion</p></div><div class="certificate-actions-inline"><a href="https://drive.google.com/file/d/1gIaH8U560XdddH5erNWJ1sB_6YAF0Ry_/view" target="_blank" rel="noopener noreferrer">View Certificate ↗</a></div></article>
       </div>
     </section>
 
